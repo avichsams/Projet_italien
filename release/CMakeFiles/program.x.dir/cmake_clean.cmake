@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/program.x.dir/compute_thermo.f90.o"
   "CMakeFiles/program.x.dir/derivative.f90.o"
   "CMakeFiles/program.x.dir/deriv_coeff.f90.o"
+  "CMakeFiles/program.x.dir/deriv_02_exp.f90.o"
   "CMakeFiles/program.x.dir/deriv_04_exp.f90.o"
   "CMakeFiles/program.x.dir/deriv_10_exp.f90.o"
   "CMakeFiles/program.x.dir/deltat_fromCFL.f90.o"

@@ -20,6 +20,7 @@ module mod_deriv
    ! Centered scheme
    real(wp) :: a02(1), a04(2), a06(3), a08(4), a10(5), a12(6)
    ! Non-centered scheme
+   real(wp) :: a02d(3)
    real(wp) :: a04d(5) , a13d(5)
    real(wp) :: a24d(7) , a15d(7) , a06d(7)
    real(wp) :: a35d(9) , a26d(9) , a17d(9) , a08d(9)

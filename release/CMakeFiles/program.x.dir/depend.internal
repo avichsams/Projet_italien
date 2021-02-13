@@ -7,6 +7,8 @@ CMakeFiles/program.x.dir/compute_thermo.f90.o
  /home/avich/Bureau/M2/projet CFD/HFSTF/code/src/compute_thermo.f90
 CMakeFiles/program.x.dir/deltat_fromCFL.f90.o
  /home/avich/Bureau/M2/projet CFD/HFSTF/code/src/deltat_fromCFL.f90
+CMakeFiles/program.x.dir/deriv_02_exp.f90.o
+ /home/avich/Bureau/M2/projet CFD/HFSTF/code/src/deriv_02_exp.f90
 CMakeFiles/program.x.dir/deriv_04_exp.f90.o
  /home/avich/Bureau/M2/projet CFD/HFSTF/code/src/deriv_04_exp.f90
 CMakeFiles/program.x.dir/deriv_10_exp.f90.o

@@ -20,8 +20,9 @@ subroutine derivative_x(var, dvar, ider_order)
    select case ( ider_order )
       case (  2 )
          ! call deriv02_x_exp( var, dvar )
-         write(*,*) 'derivative.f90: derivative order 2 to be implemented!'
-         stop
+         !write(*,*) 'derivative.f90: derivative order 2 to be implemented!'
+         !stop
+         call deriv02_x_exp( var, dvar )
       case (  4 )
          call deriv04_x_exp( var, dvar )
       case (  6 )
@@ -65,8 +66,9 @@ subroutine derivative_y(var, dvar, ider_order)
    select case ( ider_order )
       case (  2 )
          ! call deriv02_y_exp( var, dvar )
-         write(*,*) 'derivative.f90: derivative order 2 to be implemented!'
-         stop
+         !write(*,*) 'derivative.f90: derivative order 2 to be implemented!'
+         !stop
+         call deriv02_y_exp( var, dvar )
       case (  4 )
          call deriv04_y_exp( var, dvar )
       case (  6 )

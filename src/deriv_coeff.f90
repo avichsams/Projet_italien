@@ -145,6 +145,7 @@ subroutine deriv_coeff_explicit
    ! Coefficients for low-order derivatives are only standards
    a02 = a02c_std
    a04 = a04c_std
+   a02d = a02d_std
    ! 4 order
    a13d = a13d_std
    a04d = a04d_std

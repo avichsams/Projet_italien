@@ -29,6 +29,11 @@ CMakeFiles/program.x.dir/deltat_fromCFL.f90.o: CMakeFiles/program.x.dir/mod_time
 CMakeFiles/program.x.dir/deltat_fromCFL.f90.o.requires: CMakeFiles/program.x.dir/mod_work.mod.proxy
 CMakeFiles/program.x.dir/deltat_fromCFL.f90.o: CMakeFiles/program.x.dir/mod_work.mod.stamp
 
+CMakeFiles/program.x.dir/deriv_02_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_deriv.mod.proxy
+CMakeFiles/program.x.dir/deriv_02_exp.f90.o: CMakeFiles/program.x.dir/mod_deriv.mod.stamp
+CMakeFiles/program.x.dir/deriv_02_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_grid.mod.proxy
+CMakeFiles/program.x.dir/deriv_02_exp.f90.o: CMakeFiles/program.x.dir/mod_grid.mod.stamp
+
 CMakeFiles/program.x.dir/deriv_04_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_deriv.mod.proxy
 CMakeFiles/program.x.dir/deriv_04_exp.f90.o: CMakeFiles/program.x.dir/mod_deriv.mod.stamp
 CMakeFiles/program.x.dir/deriv_04_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_grid.mod.proxy

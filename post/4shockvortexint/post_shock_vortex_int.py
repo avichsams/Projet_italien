@@ -7,7 +7,11 @@ import scipy.ndimage.filters as filters
 
 x, y = read.read_grid('grid.bin')
 X, Y = np.meshgrid(x, y, indexing='ij')
-
+### creer dossier output 
+nrk =int(input("saisir nrk:  "))
+deriv_conv_order =int(input("deriv_conv_order:  "))
+deriv_visc_order =int(input("deriv_visc_order:  "))
+chemin = mes_fonc.cree_repertoir(nrk,deriv_conv_order,deriv_visc_order)
 dx = x[1]-x[0]
 
 list_restart = []

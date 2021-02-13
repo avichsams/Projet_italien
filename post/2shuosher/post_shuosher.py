@@ -9,15 +9,11 @@ gamma = 1.4
 rinf  = 1.0
 pinf  = 1e5
 uinf  = (np.sqrt(pinf/rinf))
-nrk =int(input("saisir nrk: "))
-if nrk == 6 :
-   chemin = 'images/rung_kutta_6/'
-elif nrk == 4 :
-   chemin = 'images/rung_kutta_4/'
-elif nrk == 2 :
-   chemin = 'images/rung_kutta_2/'
-else :
-   chemin = ''
+### creer dossier output 
+nrk =int(input("saisir nrk:  "))
+deriv_conv_order =int(input("deriv_conv_order:  "))
+deriv_visc_order =int(input("deriv_visc_order:  "))
+chemin = mes_fonc.cree_repertoir(nrk,deriv_conv_order,deriv_visc_order)
 
 # ------------------------------------------------------------------------------
 

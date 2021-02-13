@@ -248,6 +248,33 @@ deltat_fromCFL.f90.s:
 	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deltat_fromCFL.f90.s
 .PHONY : deltat_fromCFL.f90.s
 
+deriv_02_exp.o: deriv_02_exp.f90.o
+
+.PHONY : deriv_02_exp.o
+
+# target to build an object file
+deriv_02_exp.f90.o:
+	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_02_exp.f90.o
+.PHONY : deriv_02_exp.f90.o
+
+deriv_02_exp.i: deriv_02_exp.f90.i
+
+.PHONY : deriv_02_exp.i
+
+# target to preprocess a source file
+deriv_02_exp.f90.i:
+	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_02_exp.f90.i
+.PHONY : deriv_02_exp.f90.i
+
+deriv_02_exp.s: deriv_02_exp.f90.s
+
+.PHONY : deriv_02_exp.s
+
+# target to generate assembly for a file
+deriv_02_exp.f90.s:
+	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_02_exp.f90.s
+.PHONY : deriv_02_exp.f90.s
+
 deriv_04_exp.o: deriv_04_exp.f90.o
 
 .PHONY : deriv_04_exp.o
@@ -1026,6 +1053,9 @@ help:
 	@echo "... deltat_fromCFL.o"
 	@echo "... deltat_fromCFL.i"
 	@echo "... deltat_fromCFL.s"
+	@echo "... deriv_02_exp.o"
+	@echo "... deriv_02_exp.i"
+	@echo "... deriv_02_exp.s"
 	@echo "... deriv_04_exp.o"
 	@echo "... deriv_04_exp.i"
 	@echo "... deriv_04_exp.s"
