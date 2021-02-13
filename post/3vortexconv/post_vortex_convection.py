@@ -3,6 +3,7 @@ import glob, os
 import numpy as np
 import matplotlib.pyplot as plt
 import read_fields as read
+import mesfonction as mes_fonc
 
 x, y = read.read_grid('grid.bin')
 X, Y = np.meshgrid(x, y, indexing='ij')

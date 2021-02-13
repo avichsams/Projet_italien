@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import read_fields as read
 import numpy.fft as mklfft
 import tools_fft as tl
+import mesfonction as mes_fonc
+
 
 
 x, y = read.read_grid('grid.bin')

@@ -104,6 +104,7 @@ set( EXE_SRC mod_precision.f90
              deriv_coeff.f90
              deriv_02_exp.f90
              deriv_04_exp.f90
+             deriv_06_exp.f90
              deriv_10_exp.f90
              deltat_fromCFL.f90
              filter_coeff.f90

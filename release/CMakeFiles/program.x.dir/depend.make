@@ -39,6 +39,11 @@ CMakeFiles/program.x.dir/deriv_04_exp.f90.o: CMakeFiles/program.x.dir/mod_deriv.
 CMakeFiles/program.x.dir/deriv_04_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_grid.mod.proxy
 CMakeFiles/program.x.dir/deriv_04_exp.f90.o: CMakeFiles/program.x.dir/mod_grid.mod.stamp
 
+CMakeFiles/program.x.dir/deriv_06_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_deriv.mod.proxy
+CMakeFiles/program.x.dir/deriv_06_exp.f90.o: CMakeFiles/program.x.dir/mod_deriv.mod.stamp
+CMakeFiles/program.x.dir/deriv_06_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_grid.mod.proxy
+CMakeFiles/program.x.dir/deriv_06_exp.f90.o: CMakeFiles/program.x.dir/mod_grid.mod.stamp
+
 CMakeFiles/program.x.dir/deriv_10_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_deriv.mod.proxy
 CMakeFiles/program.x.dir/deriv_10_exp.f90.o: CMakeFiles/program.x.dir/mod_deriv.mod.stamp
 CMakeFiles/program.x.dir/deriv_10_exp.f90.o.requires: CMakeFiles/program.x.dir/mod_grid.mod.proxy

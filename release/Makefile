@@ -302,6 +302,33 @@ deriv_04_exp.f90.s:
 	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_04_exp.f90.s
 .PHONY : deriv_04_exp.f90.s
 
+deriv_06_exp.o: deriv_06_exp.f90.o
+
+.PHONY : deriv_06_exp.o
+
+# target to build an object file
+deriv_06_exp.f90.o:
+	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_06_exp.f90.o
+.PHONY : deriv_06_exp.f90.o
+
+deriv_06_exp.i: deriv_06_exp.f90.i
+
+.PHONY : deriv_06_exp.i
+
+# target to preprocess a source file
+deriv_06_exp.f90.i:
+	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_06_exp.f90.i
+.PHONY : deriv_06_exp.f90.i
+
+deriv_06_exp.s: deriv_06_exp.f90.s
+
+.PHONY : deriv_06_exp.s
+
+# target to generate assembly for a file
+deriv_06_exp.f90.s:
+	$(MAKE) -f CMakeFiles/program.x.dir/build.make CMakeFiles/program.x.dir/deriv_06_exp.f90.s
+.PHONY : deriv_06_exp.f90.s
+
 deriv_10_exp.o: deriv_10_exp.f90.o
 
 .PHONY : deriv_10_exp.o
@@ -1059,6 +1086,9 @@ help:
 	@echo "... deriv_04_exp.o"
 	@echo "... deriv_04_exp.i"
 	@echo "... deriv_04_exp.s"
+	@echo "... deriv_06_exp.o"
+	@echo "... deriv_06_exp.i"
+	@echo "... deriv_06_exp.s"
 	@echo "... deriv_10_exp.o"
 	@echo "... deriv_10_exp.i"
 	@echo "... deriv_10_exp.s"
