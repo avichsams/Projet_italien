@@ -1,0 +1,29 @@
+#!/bin/bash
+# Set compilers enviroment variables to force Intel compiler on cmake.
+# Luca Sciacovelli (luca.sciacovelli@ensam.eu)
+# Usage:
+# $ source setintel
+
+export FC=$(which ifort)
+if [ -z "$FC" ]
+   then
+   echo "ifort not found"
+else
+   echo FC=$FC
+fi
+
+export CC=$(which icc)
+if [ -z "$CC" ]
+   then
+   echo "icc not found"
+else
+   echo CC=$CC
+fi
+
+export CXX=$(which icpc)
+if [ -z "$CXX" ]
+   then
+   echo "icpc not found"
+else
+   echo CXX=$CXX
+fi

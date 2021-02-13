@@ -1,0 +1,18 @@
+5          ! case (1 Shock tube, 2 Shu-Osher, 3 Vortex, 4 Shock-Vortex, 5 TGV)
+201 2.0    ! Number of points and Domain length in x
+201 2.0    ! Number of points and Domain length in y
+T          ! viscous (T) or inviscid (F) case
+30.0       ! Final time of the simulation
+1.0        ! Write solution frequency
+20         ! Write to monitor frequency
+0.1 0.5    ! CFL and Fourier numbers
+2  1       ! Deriv. type  for conv. and visc. fluxes (1 STD, 2 DRP)
+10 4       ! Deriv. order for conv. and visc. fluxes (2-4-6-8-10-12)
+2          ! Filter type  (1 STD, 2 DRP)
+4          ! Odre of the Rung-Kutta method (temporal integration)
+10         ! Filter order (usually same as Deriv. conv. order)
+0.1        ! Filter amplitude (in [0,1])
+F          ! Shock-capturing enabled (T) or disabled (F)
+J          ! B: Bogey, J: Jameson, L: LAD
+0.0        ! Amplitude for shock-capturing
+0.0 0.00   ! Shock-capturing: c_beta and c_lambda parameters for LAD

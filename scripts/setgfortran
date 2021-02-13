@@ -1,0 +1,29 @@
+#!/bin/bash
+# Set compilers enviroment variables to force GNU compiler on cmake.
+# Luca Sciacovelli (luca.sciacovelli@ensam.eu)
+# Usage:
+# $ source setgfortran
+
+export FC=$(which gfortran)
+if [ -z "$FC" ]
+   then
+   echo "gfortran not found"
+else
+   echo FC=$FC
+fi
+
+export CC=$(which gcc)
+if [ -z "$CC" ]
+   then
+   echo "gcc not found"
+else
+   echo CC=$CC
+fi
+
+export CXX=$(which g++)
+if [ -z "$CXX" ]
+   then
+   echo "g++ not found"
+else
+   echo CXX=$CXX
+fi

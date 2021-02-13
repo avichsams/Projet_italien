@@ -1,0 +1,62 @@
+#!/bin/bash
+# Clean up release or debug folders.
+# Should be run only in release or debug folders.
+# Luca Sciacovelli (luca.sciacovelli@ensam.eu)
+
+# check current directory for safety
+rightfold1='release'
+rightfold2='debug'
+
+curfold=${PWD##*/}
+echo "$curfold"
+if [ "$curfold" != "$rightfold1" ] && [ "$curfold" != "$rightfold2" ]
+   then
+   echo "-----------------------------------------------------------"
+   echo 'ERROR! This script is meant to be run in ./'$rightfold1 'folder'
+   echo 'or ./'$rightfold2 'folder.'
+   echo 'Current directory ./'$curfold
+   echo 'Aborting for safety.'
+   echo "-----------------------------------------------------------"
+   exit 1
+fi
+
+# clean local folder
+for f in ./*.*; do
+   echo "$f"
+    # check if the glob gets expanded to existing files.
+   if [ -e "$f" ]; then
+      echo "-----------------------------------------------------------"
+      echo "Cleaning local folder files..."
+      echo "-----------------------------------------------------------"
+      \rm -v ./*.*
+      \rm -v Makefile
+   fi
+    ## this is all we needed to know, so we can break after the first iteration
+    break
+done
+
+if [ -d CMakeFiles ]
+   then
+   echo "-----------------------------------------------------------"
+   echo "Cleaning local folder directories..."
+   echo "-----------------------------------------------------------"
+   \rm -v -r *
+fi
+
+# clean binaries if present
+for f in ../bin/*.x; do
+    # check if the glob gets expanded to existing files.
+   if [ -e "$f" ]; then
+      echo "-----------------------------------------------------------"
+      echo "Removing binary files in '../bin' ..."
+      echo "-----------------------------------------------------------"
+      \rm -v ../bin/*.x
+   fi
+    ## this is all we needed to know, so we can break after the first iteration
+    break
+done
+
+# done!
+echo "-----------------------------------------------------------"
+echo "Done!"
+echo "-----------------------------------------------------------"
